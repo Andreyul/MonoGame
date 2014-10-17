@@ -30,6 +30,7 @@
   </Platform>
 
   <Platform Type="Android">
+    <Binary Name="Xamarin.Android.Support.v4" Path="Components/Xamarin.Android.Support.v4.dll" />
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="OpenTK" />
