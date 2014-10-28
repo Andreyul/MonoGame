@@ -34,6 +34,8 @@ namespace Microsoft.Xna.Framework.Utilities
         public static string ResolveRelativePath(string filePath, string relativeFile)
         {
             // Get a uri for filePath using the file:// schema and no host
+            if ((filePath.Length != 0) && (filePath[0] == '/'))
+                filePath = filePath.Substring(1);
             var src = new Uri("file:///" + filePath);
 
             // Add the relative path to relativeFile
