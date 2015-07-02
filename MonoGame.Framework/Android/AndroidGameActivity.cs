@@ -6,6 +6,7 @@ using System;
 using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Support.V4.App;
 using Android.Views;
 
 namespace Microsoft.Xna.Framework
@@ -14,7 +15,7 @@ namespace Microsoft.Xna.Framework
 #if OUYA
     public class AndroidGameActivity : Ouya.Console.Api.OuyaActivity
 #else
-    public class AndroidGameActivity : Activity
+    public class AndroidGameActivity : FragmentActivity
 #endif
     {
         internal Game Game { private get; set; }
