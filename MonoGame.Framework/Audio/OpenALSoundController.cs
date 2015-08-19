@@ -92,7 +92,7 @@ namespace Microsoft.Xna.Framework.Audio
         private bool OpenSoundController()
         {
 #if MONOMAC || IOS
-			alcMacOSXMixerOutputRate(PREFERRED_MIX_RATE);
+			//alcMacOSXMixerOutputRate(PREFERRED_MIX_RATE);
 #endif
 
             try
