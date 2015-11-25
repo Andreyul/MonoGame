@@ -55,7 +55,6 @@ namespace Microsoft.Xna.Framework
 
 		public override void OnConfigurationChanged (Android.Content.Res.Configuration newConfig)
 		{
-			// we need to refresh the viewport here.
 			base.OnConfigurationChanged (newConfig);
 		}
 
